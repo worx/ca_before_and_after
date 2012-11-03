@@ -77,5 +77,26 @@ function ca_before_and_after_strongarm() {
   $strongarm->value = 'results/[node:title]';
   $export['pathauto_node_ca_before_and_after_pattern'] = $strongarm;
 
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'weight_default_ca_before_and_after';
+  $strongarm->value = '0';
+  $export['weight_default_ca_before_and_after'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'weight_enabled_ca_before_and_after';
+  $strongarm->value = '1';
+  $export['weight_enabled_ca_before_and_after'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'weight_range_ca_before_and_after';
+  $strongarm->value = '50';
+  $export['weight_range_ca_before_and_after'] = $strongarm;
+
   return $export;
 }

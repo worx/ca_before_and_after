@@ -333,6 +333,7 @@ function ca_before_and_after_views_default_views() {
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
   $handler->display->display_options['pane_title'] = 'Ca Before and After Administration ';
+  $handler->display->display_options['inherit_panels_path'] = '1';
 
   /* Display: CA Before and After Sort View */
   $handler = $view->new_display('panel_pane', 'CA Before and After Sort View', 'before_and_after_sort_view');
