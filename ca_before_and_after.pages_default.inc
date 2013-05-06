@@ -19,7 +19,7 @@ function ca_before_and_after_default_page_manager_handlers() {
   $handler->handler = 'panel_context';
   $handler->weight = 0;
   $handler->conf = array(
-    'title' => 'Before and After Node View',
+    'title' => 'CA Before and After: Node View Template One',
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'body_classes_to_remove' => '',
@@ -61,7 +61,7 @@ function ca_before_and_after_default_page_manager_handlers() {
     $pane->pid = 'new-1';
     $pane->panel = 'middle';
     $pane->type = 'views_panes';
-    $pane->subtype = 'ca_before_and_after-ca_before_and_after_node_view';
+    $pane->subtype = 'ca_before_and_after_node-ca_b_and_a_node_template_1';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array();
@@ -78,11 +78,21 @@ function ca_before_and_after_default_page_manager_handlers() {
     $pane = new stdClass();
     $pane->pid = 'new-2';
     $pane->panel = 'middle';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'ca_before_and_after-before_and_after_node_body';
+    $pane->type = 'entity_field';
+    $pane->subtype = 'node:body';
     $pane->shown = TRUE;
     $pane->access = array();
-    $pane->configuration = array();
+    $pane->configuration = array(
+      'label' => 'hidden',
+      'formatter' => 'text_default',
+      'delta_limit' => 0,
+      'delta_offset' => '0',
+      'delta_reversed' => FALSE,
+      'formatter_settings' => array(),
+      'context' => 'argument_entity_id:node_1',
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
@@ -183,7 +193,7 @@ function ca_before_and_after_default_page_manager_pages() {
     $pane->pid = 'new-1';
     $pane->panel = 'middle';
     $pane->type = 'views_panes';
-    $pane->subtype = 'ca_before_and_after-ca_before_and_after_administration';
+    $pane->subtype = 'ca_before_and_after_admin-ca_before_and_after_administration';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array();
@@ -198,7 +208,7 @@ function ca_before_and_after_default_page_manager_pages() {
     $display->content['new-1'] = $pane;
     $display->panels['middle'][0] = 'new-1';
   $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-1';
+  $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
   $pages['before_and_after_admin'] = $page;
@@ -330,7 +340,7 @@ function ca_before_and_after_default_page_manager_pages() {
     $pane->pid = 'new-2';
     $pane->panel = 'middle';
     $pane->type = 'views_panes';
-    $pane->subtype = 'ca_before_and_after-ca_before_and_after_list_view';
+    $pane->subtype = 'ca_before_and_after_list-ca_b_and_a_list_template_1';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array();
@@ -345,7 +355,7 @@ function ca_before_and_after_default_page_manager_pages() {
     $display->content['new-2'] = $pane;
     $display->panels['middle'][0] = 'new-2';
   $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-2';
+  $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
   $pages['ca_before_and_after_list'] = $page;
@@ -428,7 +438,7 @@ function ca_before_and_after_default_page_manager_pages() {
     $pane->pid = 'new-3';
     $pane->panel = 'middle';
     $pane->type = 'views_panes';
-    $pane->subtype = 'ca_before_and_after-before_and_after_sort_view';
+    $pane->subtype = 'ca_before_and_after_sort-before_and_after_sort_view';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array();
@@ -443,7 +453,7 @@ function ca_before_and_after_default_page_manager_pages() {
     $display->content['new-3'] = $pane;
     $display->panels['middle'][0] = 'new-3';
   $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-3';
+  $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
   $pages['ca_before_and_after_sort_'] = $page;
