@@ -14,9 +14,9 @@ function ca_before_and_after_user_default_permissions() {
   $permissions['create ca_before_and_after content'] = array(
     'name' => 'create ca_before_and_after content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'before and after admin',
-      2 => 'webmaster',
+      'administrator => 'administrator',
+      'before and after admin' => 'before and after admin',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
@@ -25,9 +25,9 @@ function ca_before_and_after_user_default_permissions() {
   $permissions['delete any ca_before_and_after content'] = array(
     'name' => 'delete any ca_before_and_after content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'before and after admin',
-      2 => 'webmaster',
+      'administrator => 'administrator',
+      'before and after admin' => 'before and after admin',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
@@ -36,9 +36,9 @@ function ca_before_and_after_user_default_permissions() {
   $permissions['delete own ca_before_and_after content'] = array(
     'name' => 'delete own ca_before_and_after content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'before and after admin',
-      2 => 'webmaster',
+      'administrator => 'administrator',
+      'before and after admin' => 'before and after admin',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
@@ -47,9 +47,9 @@ function ca_before_and_after_user_default_permissions() {
   $permissions['edit any ca_before_and_after content'] = array(
     'name' => 'edit any ca_before_and_after content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'before and after admin',
-      2 => 'webmaster',
+      'administrator => 'administrator',
+      'before and after admin' => 'before and after admin',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
@@ -58,9 +58,9 @@ function ca_before_and_after_user_default_permissions() {
   $permissions['edit own ca_before_and_after content'] = array(
     'name' => 'edit own ca_before_and_after content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'before and after admin',
-      2 => 'webmaster',
+      'administrator => 'administrator',
+      'before and after admin' => 'before and after admin',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
