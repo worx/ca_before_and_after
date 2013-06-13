@@ -38,16 +38,7 @@ function ca_before_and_after_menu() {
  * implements hook_menu_alter().
  */
 function ca_before_and_after_menu_alter(&$items) {
-  $items['event']['title'] = variable_get('ca_before_and_after_menu_title', 'Before and After');
-}
-
-/**
- * Implements hook_panels_pre_render().
- */
-function ca_before_and_after_panels_pre_render($panel, $renderer) {
-  if (isset($panel->content['new-6']) && $panel->content['new-6']->subtype == 'ca_event-ca_event_list_1') {
-    $panel->title = variable_get('ca_before_and_after_panel_title', 'Before and After');
-  }
+  $items['results']['title'] = variable_get('ca_before_and_after_menu_title', 'Results');
 }
 
 /**
