@@ -49,7 +49,6 @@ features[variable][] = menu_parent_ca_before_and_after
 features[variable][] = node_options_ca_before_and_after
 features[variable][] = node_preview_ca_before_and_after
 features[variable][] = node_submitted_ca_before_and_after
-features[variable][] = pathauto_node_ca_before_and_after_pattern
 features[variable][] = weight_default_ca_before_and_after
 features[variable][] = weight_enabled_ca_before_and_after
 features[variable][] = weight_range_ca_before_and_after
