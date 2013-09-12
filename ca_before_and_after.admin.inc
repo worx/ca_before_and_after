@@ -40,7 +40,7 @@ function ca_before_and_after_settings_form() {
   );
   $form['ca_before_and_after_list_template'] = array(
     '#type' => 'select',
-    '#title' => t('Service\'s list template'),
+    '#title' => t('Before and After\'s list template'),
     '#options' => array(
       'ca_before_and_after_list_template_one' => t('Template one'),
       'ca_before_and_after_list_template_two' => t('Template two'),
@@ -51,7 +51,7 @@ function ca_before_and_after_settings_form() {
   );
   $form['ca_before_and_after_node_template'] = array(
     '#type' => 'select',
-    '#title' => t('Service\'s node template'),
+    '#title' => t('Before and After\'s node template'),
     '#options' => array(
       'ca_before_and_after_node_template_one' => t('Template one'),
       'ca_before_and_after_node_template_two' => t('Template two'),

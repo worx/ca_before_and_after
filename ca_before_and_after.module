@@ -45,11 +45,8 @@ function ca_before_and_after_menu_alter(&$items) {
  * Implements hook_views_pre_render().
  */
 function ca_before_and_after_views_pre_view(&$view, &$display_id, &$args) {
-  if ($display_id == 'ca_event_list_1') {
+  if ($display_id == 'ca_b_and_a_list_template_1') {
     $view->set_items_per_page(variable_get('ca_before_and_after_list_count', 5));
-  }
-  elseif ($display_id == 'ca_event_block_1') {
-    $view->set_items_per_page(variable_get('ca_before_and_after_block_count', 1));
   }
 }
 

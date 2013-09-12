@@ -10,7 +10,7 @@
 function ca_before_and_after_user_default_permissions() {
   $permissions = array();
 
-  // Exported permission: create ca_before_and_after content.
+  // Exported permission: 'create ca_before_and_after content'.
   $permissions['create ca_before_and_after content'] = array(
     'name' => 'create ca_before_and_after content',
     'roles' => array(
@@ -21,7 +21,7 @@ function ca_before_and_after_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: delete any ca_before_and_after content.
+  // Exported permission: 'delete any ca_before_and_after content'.
   $permissions['delete any ca_before_and_after content'] = array(
     'name' => 'delete any ca_before_and_after content',
     'roles' => array(
@@ -32,7 +32,7 @@ function ca_before_and_after_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: delete own ca_before_and_after content.
+  // Exported permission: 'delete own ca_before_and_after content'.
   $permissions['delete own ca_before_and_after content'] = array(
     'name' => 'delete own ca_before_and_after content',
     'roles' => array(
@@ -43,7 +43,7 @@ function ca_before_and_after_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: edit any ca_before_and_after content.
+  // Exported permission: 'edit any ca_before_and_after content'.
   $permissions['edit any ca_before_and_after content'] = array(
     'name' => 'edit any ca_before_and_after content',
     'roles' => array(
@@ -54,7 +54,7 @@ function ca_before_and_after_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: edit own ca_before_and_after content.
+  // Exported permission: 'edit own ca_before_and_after content'.
   $permissions['edit own ca_before_and_after content'] = array(
     'name' => 'edit own ca_before_and_after content',
     'roles' => array(
