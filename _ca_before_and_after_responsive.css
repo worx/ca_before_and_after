@@ -1,0 +1,81 @@
+.ca-before-list table,  
+.ca-before-list tbody,
+.ca-before-list tr, 
+.ca-before-list tr td,
+.node-type-ca-before-and-after table, 
+.node-type-ca-before-and-after tbody, 
+.node-type-ca-before-and-after tr, 
+.node-type-ca-before-and-after tr td{
+  display:block;
+  width: 100%;
+  border: none;
+}
+
+.ca-before-list tr.even,
+.ca-before-list tr.odd,
+.node-type-ca-before-and-after tr.even,
+.node-type-ca-before-and-after tr.odd {
+  background: none;
+}
+
+.ca-before-list tr td,
+.ca-before-list tr th,
+.node-type-ca-before-and-after tr td,
+.node-type-ca-before-and-after tr th {
+  float: left;
+  padding: 0;
+  text-align: center;
+}
+
+.ca-before-list tr th
+.node-type-ca-before-and-after tr th {
+  border-bottom: none;
+  min-height: 17px;
+}
+
+.ca-before-list thead,
+.node-type-ca-before-and-after thead {
+  display: none;
+  width: 100%;
+}
+
+.view-ca-before-and-after-list img,
+.view-ca-before-and-after-node img {
+  width: 100%;
+}
+
+@media only screen and (min-width:260px) {
+  .view-ca-before-and-after-list img {
+    width: auto;
+  }
+}
+
+@media only screen and (min-width:440px) {
+  .view-ca-before-and-after-node img {
+    width: auto;
+  }
+}
+
+@media only screen and (min-width:760px) {
+  .ca-before-list tr td,
+  .ca-before-list tr th {
+    padding: 0;
+    width: 33%;
+  }
+  
+  .ca-before-list thead {
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width:760px) {
+  .node-type-ca-before-and-after tr td,
+  .node-type-ca-before-and-after tr th {
+    padding: 0;
+    width: 50%;
+  }
+
+  .node-type-ca-before-and-after thead {
+    display: block;
+  }
+}
