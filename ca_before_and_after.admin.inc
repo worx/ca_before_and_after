@@ -43,8 +43,7 @@ function ca_before_and_after_settings_form() {
     '#title' => t('Before and After\'s list template'),
     '#options' => array(
       'ca_before_and_after_list_template_one' => t('Template one'),
-      'ca_before_and_after_list_template_two' => t('Template two'),
-      'ca_before_and_after_list_template_three' => t('Template three'),
+      'ca_before_and_after_list_template_one_flex' => t('Template one Flex'),
     ),
     '#required' => TRUE,
     '#default_value' => variable_get('ca_before_and_after_list_template', 'ca_before_and_after_list_template_one'),
@@ -54,8 +53,7 @@ function ca_before_and_after_settings_form() {
     '#title' => t('Before and After\'s node template'),
     '#options' => array(
       'ca_before_and_after_node_template_one' => t('Template one'),
-      'ca_before_and_after_node_template_two' => t('Template two'),
-      'ca_before_and_after_node_template_three' => t('Template three'),
+      'ca_before_and_after_node_template_one_flex' => t('Template one Flex'),
     ),
     '#required' => TRUE,
     '#default_value' => variable_get('ca_before_and_after_node_template', 'ca_before_and_after_node_template_one'),

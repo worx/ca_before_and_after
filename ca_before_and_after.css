@@ -1,1 +1,87 @@
 .views-field-field-ca-ba-ba-before-image, .views-field-field-ca-ba-ba-after-image { text-align: center; font-weight: bold; }
+
+/* Flex List */
+.ca-before-flex .view-header {
+  background: none repeat scroll 0 0 #f7f7f7;
+  border-bottom: 2px solid #ccc;
+  color: #333;
+  padding: 4.5px 0;
+}
+
+.ca-before-flex .views-row {
+  display: flex;
+}
+
+.ca-before-flex .views-field {
+  width: 33%;
+}
+
+.ca-before-flex .views-row .views-label {
+  display: none;
+}
+
+.ca-before-flex .view-header .views-label {
+  display: inherit;
+  font-weight: bold;
+  text-align: center;
+}
+
+.ca-before-flex .view-header {
+  background: none repeat scroll 0 0 #f7f7f7;
+  border-bottom: 2px solid #ccc;
+  color: #333;
+  padding: 4.5px 0;
+}
+
+.ca-before-flex .view-content {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.ca-before-flex .view-content .views-row {
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  padding: 4px 8px;
+}
+
+
+.ca-before-flex .view-content .views-row:nth-child(2n) {
+  background-color: #eee;
+}
+
+.ca-before-flex .views-field-title h2 {
+  display: table;
+  height: 100%;
+  margin: 0;
+}
+
+.ca-before-flex .views-field-title h2 a {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/** Flex Node **/
+.ca-before-node-flex .view-ca-before-and-after-node {
+  margin-bottom: 20px;
+}
+
+.ca-before-node-flex .views-row {
+  display: flex;
+}
+
+.ca-before-node-flex .views-field {
+  width: 50%
+}
+
+.ca-before-node-flex .views-label {
+  background: none repeat scroll 0 0 #f7f7f7;
+  border-bottom: 1px solid #ccc;
+  display: block;
+  padding: 4px 0;
+  width: 100%;
+}
+
+.ca-before-node-flex .field-content {
+  border-bottom: 1px solid #ccc;
+  padding: 4px 0;
+}

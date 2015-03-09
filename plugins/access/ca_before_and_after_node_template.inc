@@ -27,8 +27,7 @@ function ca_before_and_after_node_template_access_settings($form, &$form_state, 
     '#title' => t('Before and After\'s node template'),
     '#options' => array(
       'ca_before_and_after_node_template_one' => t('Template one'),
-      'ca_before_and_after_node_template_two' => t('Template two'),
-      'ca_before_and_after_node_template_three' => t('Template three'),
+      'ca_before_and_after_node_template_one_flex' => t('Template one flex'),
     ),
     '#required' => TRUE,
     '#default_value' => $conf['ca_before_and_after_node_template'],
@@ -57,11 +56,8 @@ function ca_before_and_after_node_template_access_summary($conf, $context) {
   if ($conf['ca_before_and_after_node_template'] == 'ca_before_and_after_node_template_one') {
     $template = t('Template one');
   }
-  elseif ($conf['ca_before_and_after_node_template'] == 'ca_before_and_after_node_template_two') {
-    $template = t('Template two');
-  }
   else {
-    $template = t('Template three');
+    $template = t('Template one flex');
   }
 
   return t('Display template is set to: ' . $template);

@@ -73,6 +73,7 @@ function ca_before_and_after_node_info() {
       'help' => '',
     ),
   );
+  drupal_alter('node_info', $items);
   return $items;
 }
 

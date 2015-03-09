@@ -405,6 +405,21 @@ function ca_before_and_after_views_default_views() {
   $handler->display->display_options['pane_title'] = 'CA Before and After List View Template One';
   $handler->display->display_options['pane_category']['name'] = 'CA List';
   $handler->display->display_options['pane_category']['weight'] = '0';
+  $handler->display->display_options['inherit_panels_path'] = '1';
+
+  /* Display: CA Before and After List View Template One */
+  $handler = $view->new_display('panel_pane', 'CA Before and After List View Template One', 'ca_b_and_a_flex_template_1');
+  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['pane_title'] = 'CA Before and After Flex View Template One';
+  $handler->display->display_options['pane_category']['name'] = 'CA List';
+  $handler->display->display_options['pane_category']['weight'] = '0';
+  $handler->display->display_options['inherit_panels_path'] = '1';
   $export['ca_before_and_after_list'] = $view;
 
   $view = new view();
@@ -549,6 +564,56 @@ function ca_before_and_after_views_default_views() {
   $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
   $handler->display->display_options['pane_title'] = 'CA Before and After Node View Template One';
+  $handler->display->display_options['pane_category']['name'] = 'CA Node';
+  $handler->display->display_options['pane_category']['weight'] = '0';
+
+  /* Display: CA Before and After: Flex Node View Template One */
+  $handler = $view->new_display('panel_pane', 'CA Before and After: Flex Node View Template One', 'ca_b_and_a_flex_node_template_1');
+  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '1';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Before Image */
+  $handler->display->display_options['fields']['field_ca_ba_ba_before_image']['id'] = 'field_ca_ba_ba_before_image';
+  $handler->display->display_options['fields']['field_ca_ba_ba_before_image']['table'] = 'field_data_field_ca_ba_ba_before_image';
+  $handler->display->display_options['fields']['field_ca_ba_ba_before_image']['field'] = 'field_ca_ba_ba_before_image';
+  $handler->display->display_options['fields']['field_ca_ba_ba_before_image']['label'] = 'Before';
+  $handler->display->display_options['fields']['field_ca_ba_ba_before_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ca_ba_ba_before_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_ca_ba_ba_before_image']['settings'] = array(
+    'image_style' => 'before_and_after',
+    'image_link' => '',
+  );
+  /* Field: Content: After Image */
+  $handler->display->display_options['fields']['field_ca_ba_ba_after_image']['id'] = 'field_ca_ba_ba_after_image';
+  $handler->display->display_options['fields']['field_ca_ba_ba_after_image']['table'] = 'field_data_field_ca_ba_ba_after_image';
+  $handler->display->display_options['fields']['field_ca_ba_ba_after_image']['field'] = 'field_ca_ba_ba_after_image';
+  $handler->display->display_options['fields']['field_ca_ba_ba_after_image']['label'] = 'After';
+  $handler->display->display_options['fields']['field_ca_ba_ba_after_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ca_ba_ba_after_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_ca_ba_ba_after_image']['settings'] = array(
+    'image_style' => 'before_and_after',
+    'image_link' => '',
+  );
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Content: Nid */
+  $handler->display->display_options['arguments']['nid']['id'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['table'] = 'node';
+  $handler->display->display_options['arguments']['nid']['field'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'node';
+  $handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['pane_title'] = 'CA Before and After: Flex Node View Template One';
   $handler->display->display_options['pane_category']['name'] = 'CA Node';
   $handler->display->display_options['pane_category']['weight'] = '0';
   $export['ca_before_and_after_node'] = $view;

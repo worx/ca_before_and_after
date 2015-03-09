@@ -17,9 +17,9 @@ function ca_before_and_after_default_page_manager_handlers() {
   $handler->task = 'node_view';
   $handler->subtask = '';
   $handler->handler = 'panel_context';
-  $handler->weight = 0;
+  $handler->weight = -30;
   $handler->conf = array(
-    'title' => 'CA Before and After: Node View Template One',
+    'title' => 'CA Before and After: Node Table View Template One',
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'body_classes_to_remove' => '',
@@ -38,6 +38,13 @@ function ca_before_and_after_default_page_manager_handlers() {
             ),
           ),
           'context' => 'argument_entity_id:node_1',
+          'not' => FALSE,
+        ),
+        1 => array(
+          'name' => 'ca_before_and_after_node_template',
+          'settings' => array(
+            'ca_before_and_after_node_template' => 'ca_before_and_after_node_template_one',
+          ),
           'not' => FALSE,
         ),
       ),
@@ -110,6 +117,114 @@ function ca_before_and_after_default_page_manager_handlers() {
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $export['ca_before_and_after_node_view_panel_context'] = $handler;
+
+  $handler = new stdClass();
+  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
+  $handler->api_version = 1;
+  $handler->name = 'ca_before_and_after_flex_node_view_panel_context';
+  $handler->task = 'node_view';
+  $handler->subtask = '';
+  $handler->handler = 'panel_context';
+  $handler->weight = -29;
+  $handler->conf = array(
+    'title' => 'CA Before and After: Flex Table View Template One',
+    'no_blocks' => 0,
+    'pipeline' => 'standard',
+    'body_classes_to_remove' => '',
+    'body_classes_to_add' => 'ca-before-node-flex ca-before-node-flex-template-1',
+    'css_id' => '',
+    'css' => '',
+    'contexts' => array(),
+    'relationships' => array(),
+    'access' => array(
+      'plugins' => array(
+        0 => array(
+          'name' => 'node_type',
+          'settings' => array(
+            'type' => array(
+              'ca_before_and_after' => 'ca_before_and_after',
+            ),
+          ),
+          'context' => 'argument_entity_id:node_1',
+          'not' => FALSE,
+        ),
+        1 => array(
+          'name' => 'ca_before_and_after_node_template',
+          'settings' => array(
+            'ca_before_and_after_node_template' => 'ca_before_and_after_node_template_one_flex',
+          ),
+          'not' => FALSE,
+        ),
+      ),
+      'logic' => 'and',
+    ),
+  );
+  $display = new panels_display();
+  $display->layout = 'onecol';
+  $display->layout_settings = array();
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => NULL,
+      'middle' => NULL,
+    ),
+  );
+  $display->cache = array();
+  $display->title = '%node:title';
+  $display->uuid = 'c0719f5f-a8aa-4aa8-858f-b0ec0d81d5f8';
+  $display->content = array();
+  $display->panels = array();
+    $pane = new stdClass();
+    $pane->pid = 'new-efff2074-039c-49f5-8a7d-a7c3a8fd7290';
+    $pane->panel = 'middle';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'ca_before_and_after_node-ca_b_and_a_flex_node_template_1';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = 'efff2074-039c-49f5-8a7d-a7c3a8fd7290';
+    $display->content['new-efff2074-039c-49f5-8a7d-a7c3a8fd7290'] = $pane;
+    $display->panels['middle'][0] = 'new-efff2074-039c-49f5-8a7d-a7c3a8fd7290';
+    $pane = new stdClass();
+    $pane->pid = 'new-66527140-3fe2-4e35-bc06-3baf1d3a2691';
+    $pane->panel = 'middle';
+    $pane->type = 'entity_field';
+    $pane->subtype = 'node:body';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'label' => 'hidden',
+      'formatter' => 'text_default',
+      'delta_limit' => 0,
+      'delta_offset' => '0',
+      'delta_reversed' => FALSE,
+      'formatter_settings' => array(),
+      'context' => 'argument_entity_id:node_1',
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = '66527140-3fe2-4e35-bc06-3baf1d3a2691';
+    $display->content['new-66527140-3fe2-4e35-bc06-3baf1d3a2691'] = $pane;
+    $display->panels['middle'][1] = 'new-66527140-3fe2-4e35-bc06-3baf1d3a2691';
+  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->title_pane = '0';
+  $handler->conf['display'] = $display;
+  $export['ca_before_and_after_flex_node_view_panel_context'] = $handler;
 
   return $export;
 }
@@ -318,7 +433,7 @@ function ca_before_and_after_default_page_manager_pages() {
   $handler->handler = 'panel_context';
   $handler->weight = 0;
   $handler->conf = array(
-    'title' => 'Panel',
+    'title' => 'CA Before and After:Table List',
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'body_classes_to_remove' => '',
@@ -327,6 +442,17 @@ function ca_before_and_after_default_page_manager_pages() {
     'css' => '',
     'contexts' => array(),
     'relationships' => array(),
+    'access' => array(
+      'plugins' => array(
+        0 => array(
+          'name' => 'ca_before_and_after_list_template',
+          'settings' => array(
+            'ca_before_and_after_list_template' => 'ca_before_and_after_list_template_one',
+          ),
+          'not' => FALSE,
+        ),
+      ),
+    ),
   );
   $display = new panels_display();
   $display->layout = 'onecol';
@@ -365,12 +491,80 @@ function ca_before_and_after_default_page_manager_pages() {
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
+  $handler = new stdClass();
+  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
+  $handler->api_version = 1;
+  $handler->name = 'page_ca_before_and_after_list_panel_context_2';
+  $handler->task = 'page';
+  $handler->subtask = 'ca_before_and_after_list';
+  $handler->handler = 'panel_context';
+  $handler->weight = 1;
+  $handler->conf = array(
+    'title' => 'CA Before and After: Flex Table List',
+    'no_blocks' => 0,
+    'pipeline' => 'standard',
+    'body_classes_to_remove' => '',
+    'body_classes_to_add' => 'ca-before-flex ca-before-flex-template-1',
+    'css_id' => '',
+    'css' => '',
+    'contexts' => array(),
+    'relationships' => array(),
+    'access' => array(
+      'plugins' => array(
+        0 => array(
+          'name' => 'ca_before_and_after_list_template',
+          'settings' => array(
+            'ca_before_and_after_list_template' => 'ca_before_and_after_list_template_one_flex',
+          ),
+          'not' => FALSE,
+        ),
+      ),
+      'logic' => 'and',
+    ),
+  );
+  $display = new panels_display();
+  $display->layout = 'onecol';
+  $display->layout_settings = array();
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => NULL,
+      'middle' => NULL,
+    ),
+  );
+  $display->cache = array();
+  $display->title = '<no title>';
+  $display->uuid = '54579363-787f-4ea5-92b2-0a71473e32b4';
+  $display->content = array();
+  $display->panels = array();
+    $pane = new stdClass();
+    $pane->pid = 'new-c49ccc1f-018c-49ab-b3ca-5bd84492433b';
+    $pane->panel = 'middle';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'ca_before_and_after_list-ca_b_and_a_flex_template_1';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = 'c49ccc1f-018c-49ab-b3ca-5bd84492433b';
+    $display->content['new-c49ccc1f-018c-49ab-b3ca-5bd84492433b'] = $pane;
+    $display->panels['middle'][0] = 'new-c49ccc1f-018c-49ab-b3ca-5bd84492433b';
+  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->title_pane = '0';
+  $handler->conf['display'] = $display;
+  $page->default_handlers[$handler->name] = $handler;
   $pages['ca_before_and_after_list'] = $page;
 
   $page = new stdClass();
   $page->disabled = FALSE; /* Edit this to true to make a default page disabled initially */
   $page->api_version = 1;
-  $page->name = 'ca_before_and_after_sort_';
+  $page->name = 'ca_before_and_after_sort';
   $page->task = 'page';
   $page->admin_title = 'CA Before and After: Sort ';
   $page->admin_description = '';
@@ -414,7 +608,7 @@ function ca_before_and_after_default_page_manager_pages() {
   $handler->api_version = 1;
   $handler->name = 'page_ca_before_and_after_sort__panel_context';
   $handler->task = 'page';
-  $handler->subtask = 'ca_before_and_after_sort_';
+  $handler->subtask = 'ca_before_and_after_sort';
   $handler->handler = 'panel_context';
   $handler->weight = 0;
   $handler->conf = array(
@@ -465,7 +659,7 @@ function ca_before_and_after_default_page_manager_pages() {
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
-  $pages['ca_before_and_after_sort_'] = $page;
+  $pages['ca_before_and_after_sort'] = $page;
 
   return $pages;
 
