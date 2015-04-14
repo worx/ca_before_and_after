@@ -8,17 +8,24 @@
 function ca_before_and_after_install() {  
   // Update the imce roles profiles to set the Admin and writer role.
   $imce_roles_profiles = variable_get('imce_roles_profiles');
-  
+
   $imce_roles_profiles_vaule = array (
     'weight' => '-9',
     'public_pid' => 2,
     'private_pid' => 2,
   );
-  
+
   $imce_roles_profiles[240200815] = $imce_roles_profiles_vaule;
-  
+
   variable_set('imce_roles_profiles', $imce_roles_profiles);
-  
+
   // Set the Pathauto for the node.
   variable_set('pathauto_node_ca_before_and_after_pattern', 'results/[node:title]');
+
+  // Added the permission assign node weights for Results Admin.
+  user_role_change_permissions(240200815, 
+    array(
+      'assign node weights' => TRUE,
+    )
+  );
 }
