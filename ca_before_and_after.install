@@ -25,7 +25,7 @@ function ca_before_and_after_install() {
   // Added the permission assign node weights for Results Admin.
   user_role_change_permissions(240200815, 
     array(
-      'assign node weights' => TRUE,
+      'assign node weight' => TRUE,
     )
   );
 }
