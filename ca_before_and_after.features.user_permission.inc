@@ -15,7 +15,6 @@ function ca_before_and_after_user_default_permissions() {
     'name' => 'create ca_before_and_after content',
     'roles' => array(
       'administrator' => 'administrator',
-      'before and after admin' => 'before and after admin',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -26,7 +25,6 @@ function ca_before_and_after_user_default_permissions() {
     'name' => 'delete any ca_before_and_after content',
     'roles' => array(
       'administrator' => 'administrator',
-      'before and after admin' => 'before and after admin',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -37,7 +35,6 @@ function ca_before_and_after_user_default_permissions() {
     'name' => 'delete own ca_before_and_after content',
     'roles' => array(
       'administrator' => 'administrator',
-      'before and after admin' => 'before and after admin',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -48,7 +45,6 @@ function ca_before_and_after_user_default_permissions() {
     'name' => 'edit any ca_before_and_after content',
     'roles' => array(
       'administrator' => 'administrator',
-      'before and after admin' => 'before and after admin',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -59,7 +55,6 @@ function ca_before_and_after_user_default_permissions() {
     'name' => 'edit own ca_before_and_after content',
     'roles' => array(
       'administrator' => 'administrator',
-      'before and after admin' => 'before and after admin',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
