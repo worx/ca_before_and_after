@@ -54,7 +54,8 @@ function ca_before_and_after_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-ca_before_and_after-field_ca_ba_ba_after_image'
+  // Exported field_instance:
+  // 'node-ca_before_and_after-field_ca_ba_ba_after_image'
   $field_instances['node-ca_before_and_after-field_ca_ba_ba_after_image'] = array(
     'bundle' => 'ca_before_and_after',
     'deleted' => 0,
@@ -104,7 +105,8 @@ function ca_before_and_after_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-ca_before_and_after-field_ca_ba_ba_before_image'
+  // Exported field_instance:
+  // 'node-ca_before_and_after-field_ca_ba_ba_before_image'
   $field_instances['node-ca_before_and_after-field_ca_ba_ba_before_image'] = array(
     'bundle' => 'ca_before_and_after',
     'deleted' => 0,
