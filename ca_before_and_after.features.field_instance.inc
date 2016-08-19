@@ -10,7 +10,7 @@
 function ca_before_and_after_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-ca_before_and_after-body'
+  // Exported field_instance: 'node-ca_before_and_after-body'.
   $field_instances['node-ca_before_and_after-body'] = array(
     'bundle' => 'ca_before_and_after',
     'default_value' => NULL,
@@ -55,7 +55,7 @@ function ca_before_and_after_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-ca_before_and_after-field_ca_ba_ba_after_image'
+  // 'node-ca_before_and_after-field_ca_ba_ba_after_image'.
   $field_instances['node-ca_before_and_after-field_ca_ba_ba_after_image'] = array(
     'bundle' => 'ca_before_and_after',
     'deleted' => 0,
@@ -97,7 +97,21 @@ function ca_before_and_after_field_default_field_instances() {
       'active' => 1,
       'module' => 'image',
       'settings' => array(
-        'preview_image_style' => 'thumbnail',
+        'manualcrop_crop_info' => 1,
+        'manualcrop_default_crop_area' => 1,
+        'manualcrop_enable' => 1,
+        'manualcrop_inline_crop' => 0,
+        'manualcrop_instant_crop' => 0,
+        'manualcrop_instant_preview' => 1,
+        'manualcrop_keyboard' => 1,
+        'manualcrop_maximize_default_crop_area' => 1,
+        'manualcrop_require_cropping' => array(),
+        'manualcrop_styles_list' => array(
+          'crop_large_landscape' => 'crop_large_landscape',
+        ),
+        'manualcrop_styles_mode' => 'include',
+        'manualcrop_thumblist' => 0,
+        'preview_image_style' => 'crop_large_landscape_preview',
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
@@ -106,7 +120,7 @@ function ca_before_and_after_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-ca_before_and_after-field_ca_ba_ba_before_image'
+  // 'node-ca_before_and_after-field_ca_ba_ba_before_image'.
   $field_instances['node-ca_before_and_after-field_ca_ba_ba_before_image'] = array(
     'bundle' => 'ca_before_and_after',
     'deleted' => 0,
@@ -148,7 +162,21 @@ function ca_before_and_after_field_default_field_instances() {
       'active' => 1,
       'module' => 'image',
       'settings' => array(
-        'preview_image_style' => 'thumbnail',
+        'manualcrop_crop_info' => 1,
+        'manualcrop_default_crop_area' => 1,
+        'manualcrop_enable' => 1,
+        'manualcrop_inline_crop' => 0,
+        'manualcrop_instant_crop' => 0,
+        'manualcrop_instant_preview' => 1,
+        'manualcrop_keyboard' => 1,
+        'manualcrop_maximize_default_crop_area' => 1,
+        'manualcrop_require_cropping' => array(),
+        'manualcrop_styles_list' => array(
+          'crop_large_landscape' => 'crop_large_landscape',
+        ),
+        'manualcrop_styles_mode' => 'include',
+        'manualcrop_thumblist' => 0,
+        'preview_image_style' => 'crop_large_landscape_preview',
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',

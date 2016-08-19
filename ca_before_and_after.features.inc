@@ -79,7 +79,7 @@ function ca_before_and_after_weight_features_default_settings() {
     'enabled' => 1,
     'range' => 50,
     'menu_weight' => 0,
-    'default' => 0,
+    'default' => -50,
     'sync_translations' => 0,
   );
 

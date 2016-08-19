@@ -256,8 +256,8 @@ function ca_before_and_after_views_default_views() {
   $handler->display->display_options['fields']['field_ca_ba_ba_before_image']['field'] = 'field_ca_ba_ba_before_image';
   $handler->display->display_options['fields']['field_ca_ba_ba_before_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_ba_ba_before_image']['settings'] = array(
-    'image_style' => 'medium',
-    'image_link' => '',
+    'image_style' => 'crop_large_landscape_scale_default',
+    'image_link' => 'content',
   );
   /* Field: Content: After Image */
   $handler->display->display_options['fields']['field_ca_ba_ba_after_image']['id'] = 'field_ca_ba_ba_after_image';
@@ -266,8 +266,8 @@ function ca_before_and_after_views_default_views() {
   $handler->display->display_options['fields']['field_ca_ba_ba_after_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_ca_ba_ba_after_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_ba_ba_after_image']['settings'] = array(
-    'image_style' => 'medium',
-    'image_link' => '',
+    'image_style' => 'crop_large_landscape_scale_default',
+    'image_link' => 'content',
   );
   /* Sort criterion: Weight: Weight */
   $handler->display->display_options['sorts']['weight']['id'] = 'weight';
@@ -432,9 +432,15 @@ function ca_before_and_after_views_default_views() {
   $handler->display->display_options['fields']['field_ca_ba_ba_before_image']['label'] = 'Before';
   $handler->display->display_options['fields']['field_ca_ba_ba_before_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_ca_ba_ba_before_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_ca_ba_ba_before_image']['type'] = 'colorbox';
   $handler->display->display_options['fields']['field_ca_ba_ba_before_image']['settings'] = array(
-    'image_style' => 'before_and_after',
-    'image_link' => '',
+    'colorbox_node_style' => 'crop_large_landscape',
+    'colorbox_node_style_first' => '',
+    'colorbox_image_style' => '',
+    'colorbox_gallery' => 'post',
+    'colorbox_gallery_custom' => '',
+    'colorbox_caption' => 'auto',
+    'colorbox_caption_custom' => '',
   );
   /* Field: Content: After Image */
   $handler->display->display_options['fields']['field_ca_ba_ba_after_image']['id'] = 'field_ca_ba_ba_after_image';
@@ -443,9 +449,15 @@ function ca_before_and_after_views_default_views() {
   $handler->display->display_options['fields']['field_ca_ba_ba_after_image']['label'] = 'After';
   $handler->display->display_options['fields']['field_ca_ba_ba_after_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_ca_ba_ba_after_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_ca_ba_ba_after_image']['type'] = 'colorbox';
   $handler->display->display_options['fields']['field_ca_ba_ba_after_image']['settings'] = array(
-    'image_style' => 'before_and_after',
-    'image_link' => '',
+    'colorbox_node_style' => 'crop_large_landscape',
+    'colorbox_node_style_first' => '',
+    'colorbox_image_style' => '',
+    'colorbox_gallery' => 'post',
+    'colorbox_gallery_custom' => '',
+    'colorbox_caption' => 'auto',
+    'colorbox_caption_custom' => '',
   );
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   /* Contextual filter: Content: Nid */
@@ -482,9 +494,15 @@ function ca_before_and_after_views_default_views() {
   $handler->display->display_options['fields']['field_ca_ba_ba_before_image']['label'] = 'Before';
   $handler->display->display_options['fields']['field_ca_ba_ba_before_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_ca_ba_ba_before_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_ca_ba_ba_before_image']['type'] = 'colorbox';
   $handler->display->display_options['fields']['field_ca_ba_ba_before_image']['settings'] = array(
-    'image_style' => 'before_and_after',
-    'image_link' => '',
+    'colorbox_node_style' => 'crop_large_landscape',
+    'colorbox_node_style_first' => '',
+    'colorbox_image_style' => '',
+    'colorbox_gallery' => 'post',
+    'colorbox_gallery_custom' => '',
+    'colorbox_caption' => 'auto',
+    'colorbox_caption_custom' => '',
   );
   /* Field: Content: After Image */
   $handler->display->display_options['fields']['field_ca_ba_ba_after_image']['id'] = 'field_ca_ba_ba_after_image';
@@ -493,9 +511,15 @@ function ca_before_and_after_views_default_views() {
   $handler->display->display_options['fields']['field_ca_ba_ba_after_image']['label'] = 'After';
   $handler->display->display_options['fields']['field_ca_ba_ba_after_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_ca_ba_ba_after_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_ca_ba_ba_after_image']['type'] = 'colorbox';
   $handler->display->display_options['fields']['field_ca_ba_ba_after_image']['settings'] = array(
-    'image_style' => 'before_and_after',
-    'image_link' => '',
+    'colorbox_node_style' => 'crop_large_landscape',
+    'colorbox_node_style_first' => '',
+    'colorbox_image_style' => '',
+    'colorbox_gallery' => 'post',
+    'colorbox_gallery_custom' => '',
+    'colorbox_caption' => 'auto',
+    'colorbox_caption_custom' => '',
   );
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   /* Contextual filter: Content: Nid */

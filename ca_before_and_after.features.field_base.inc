@@ -10,7 +10,7 @@
 function ca_before_and_after_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_ca_ba_ba_after_image'
+  // Exported field_base: 'field_ca_ba_ba_after_image'.
   $field_bases['field_ca_ba_ba_after_image'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -32,7 +32,7 @@ function ca_before_and_after_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_ca_ba_ba_before_image'
+  // Exported field_base: 'field_ca_ba_ba_before_image'.
   $field_bases['field_ca_ba_ba_before_image'] = array(
     'active' => 1,
     'cardinality' => 1,
