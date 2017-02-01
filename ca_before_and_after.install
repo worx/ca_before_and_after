@@ -29,6 +29,35 @@ function ca_before_and_after_install() {
   user_role_change_permissions(240200815, 
     array(
       'assign node weight' => TRUE,
+      'create ca_before_and_after content' => TRUE,
+      'delete any ca_before_and_after content' => TRUE,
+      'delete own ca_before_and_after content' => TRUE,
+      'edit any ca_before_and_after content' => TRUE,
+      'edit own ca_before_and_after content' => TRUE,
+    )
+  );
+
+  // Set the permissions for Administrator
+  user_role_change_permissions(3, 
+    array(
+      'assign node weight' => TRUE,
+      'create ca_before_and_after content' => TRUE,
+      'delete any ca_before_and_after content' => TRUE,
+      'delete own ca_before_and_after content' => TRUE,
+      'edit any ca_before_and_after content' => TRUE,
+      'edit own ca_before_and_after content' => TRUE,
+    )
+  );
+
+  // Set the permissions for Webmaster
+  user_role_change_permissions(4, 
+    array(
+      'assign node weight' => TRUE,
+      'create ca_before_and_after content' => TRUE,
+      'delete any ca_before_and_after content' => TRUE,
+      'delete own ca_before_and_after content' => TRUE,
+      'edit any ca_before_and_after content' => TRUE,
+      'edit own ca_before_and_after content' => TRUE,
     )
   );
 }
@@ -45,6 +74,47 @@ function ca_before_and_after_update_7000() {
   user_role_change_permissions(240200815, 
     array(
       'assign node weight' => TRUE,
+    )
+  );
+}
+
+/**
+ * Set the permissions for Results Admin, Webmaster and Administrator as a one time event rather than handled with features to allow additonal roles to be 
+ * given these permissions without overridding the feature.
+ */
+function ca_before_and_after_update_7001() {
+  // Added the permission assign node weight for Results Admin.
+  user_role_change_permissions(240200815, 
+    array(
+      'create ca_before_and_after content' => TRUE,
+      'delete any ca_before_and_after content' => TRUE,
+      'delete own ca_before_and_after content' => TRUE,
+      'edit any ca_before_and_after content' => TRUE,
+      'edit own ca_before_and_after content' => TRUE,
+    )
+  );
+
+  // Set the permissions for Administrator
+  user_role_change_permissions(3, 
+    array(
+      'assign node weight' => TRUE,
+      'create ca_before_and_after content' => TRUE,
+      'delete any ca_before_and_after content' => TRUE,
+      'delete own ca_before_and_after content' => TRUE,
+      'edit any ca_before_and_after content' => TRUE,
+      'edit own ca_before_and_after content' => TRUE,
+    )
+  );
+
+  // Set the permissions for Webmaster
+  user_role_change_permissions(4, 
+    array(
+      'assign node weight' => TRUE,
+      'create ca_before_and_after content' => TRUE,
+      'delete any ca_before_and_after content' => TRUE,
+      'delete own ca_before_and_after content' => TRUE,
+      'edit any ca_before_and_after content' => TRUE,
+      'edit own ca_before_and_after content' => TRUE,
     )
   );
 }
