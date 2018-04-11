@@ -46,7 +46,7 @@ function ca_before_and_after_settings_form() {
       'ca_before_and_after_list_template_one_flex' => t('Template one Flex'),
     ),
     '#required' => TRUE,
-    '#default_value' => variable_get('ca_before_and_after_list_template', 'ca_before_and_after_list_template_one'),
+    '#default_value' => variable_get('ca_before_and_after_list_template', 'ca_before_and_after_list_template_one_flex'),
   );
   $form['ca_before_and_after_node_template'] = array(
     '#type' => 'select',
@@ -56,7 +56,7 @@ function ca_before_and_after_settings_form() {
       'ca_before_and_after_node_template_one_flex' => t('Template one Flex'),
     ),
     '#required' => TRUE,
-    '#default_value' => variable_get('ca_before_and_after_node_template', 'ca_before_and_after_node_template_one'),
+    '#default_value' => variable_get('ca_before_and_after_node_template', 'ca_before_and_after_node_template_one_flex'),
   );
   $form['actions'] = array(
     '#type' => 'actions',
