@@ -70,7 +70,7 @@
 }
 
 .ca-before-node-flex .views-field {
-  width: 50%
+  flex: 0 1 50%;
 }
 
 .ca-before-node-flex .views-label {
